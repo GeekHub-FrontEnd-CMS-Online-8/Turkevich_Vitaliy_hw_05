@@ -38,6 +38,11 @@ p{
     display: flex;
     align-items: center;
   }
+  & a{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+  }
   & p{
     font-weight: 700;
     font-size: 30px;
@@ -68,6 +73,8 @@ header{
     border: 1px solid #15a4fa;
     border-radius: 3px;
     color: white;
+    transition: ease .1s;
+    cursor: pointer;
     &:hover{
       background: #15a4fa;
       padding: 0;
@@ -80,6 +87,9 @@ header{
   & a{
     display: block;
     margin: 226px auto 0;
+    & img:hover{
+      box-shadow: #15a4fa;
+    }
   }
 }
 
@@ -178,7 +188,14 @@ header{
         height: 45px;
         width: 140px;
         border: 1px solid #15a4fa;
+        border-radius: 2px;
         color: white;
+        font-size: 17px;
+        transition: ease .1s;
+        cursor: pointer;
+        &:hover{
+          background: #15a4fa;
+        }
       }
       & label{
         display: flex;
@@ -208,6 +225,8 @@ footer{
     cursor: pointer;
     @for $i from 1 through 4{
       &:nth-child(#{$i}){
+        transition: background .3s ease;
+        -webkit-transition: background .3s ease;
         background: url("../img/pic#{$i}.png");
         &:hover{
           background: url("../img/pic#{$i}h.png");

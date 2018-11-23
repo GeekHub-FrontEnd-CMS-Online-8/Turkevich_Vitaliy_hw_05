@@ -34,6 +34,10 @@ p {
 #logo .wrap {
   display: flex;
   align-items: center; }
+#logo a {
+  text-decoration: none;
+  display: flex;
+  align-items: center; }
 #logo p {
   font-weight: 700;
   font-size: 30px;
@@ -59,7 +63,9 @@ header {
     width: 177px;
     border: 1px solid #15a4fa;
     border-radius: 3px;
-    color: white; }
+    color: white;
+    transition: ease .1s;
+    cursor: pointer; }
     header input:hover {
       background: #15a4fa;
       padding: 0;
@@ -69,6 +75,8 @@ header {
   header a {
     display: block;
     margin: 226px auto 0; }
+    header a img:hover {
+      box-shadow: #15a4fa; }
 
 #topic {
   background: #f6f9f9; }
@@ -146,7 +154,13 @@ header {
         height: 45px;
         width: 140px;
         border: 1px solid #15a4fa;
-        color: white; }
+        border-radius: 2px;
+        color: white;
+        font-size: 17px;
+        transition: ease .1s;
+        cursor: pointer; }
+        #stayWithUs form div input[type="submit"]:hover {
+          background: #15a4fa; }
       #stayWithUs form div label {
         display: flex;
         align-items: center; }
@@ -166,18 +180,26 @@ footer a {
   margin: 0 2px;
   cursor: pointer; }
   footer a:nth-child(1) {
+    transition: background .3s ease;
+    -webkit-transition: background .3s ease;
     background: url("../img/pic1.png"); }
     footer a:nth-child(1):hover {
       background: url("../img/pic1h.png"); }
   footer a:nth-child(2) {
+    transition: background .3s ease;
+    -webkit-transition: background .3s ease;
     background: url("../img/pic2.png"); }
     footer a:nth-child(2):hover {
       background: url("../img/pic2h.png"); }
   footer a:nth-child(3) {
+    transition: background .3s ease;
+    -webkit-transition: background .3s ease;
     background: url("../img/pic3.png"); }
     footer a:nth-child(3):hover {
       background: url("../img/pic3h.png"); }
   footer a:nth-child(4) {
+    transition: background .3s ease;
+    -webkit-transition: background .3s ease;
     background: url("../img/pic4.png"); }
     footer a:nth-child(4):hover {
       background: url("../img/pic4h.png"); }
