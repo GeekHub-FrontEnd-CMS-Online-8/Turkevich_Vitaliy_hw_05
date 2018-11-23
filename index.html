@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Turkevich_Vitaliy_hw_05</title>
     <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/main.js"></script>
 </head>
 <body>
 
@@ -22,7 +23,7 @@
             <hr>
             <p>STRICT is a responsive theme with a a clean and minimal look.</p>
             <input type="submit" value="Call to action">
-            <a href="#"><img src="img/arrow.png" alt="arrow"></a>
+            <a href="#topic"><img src="img/arrow.png" alt="arrow"></a>
         </div>
     </header>
 
@@ -60,16 +61,60 @@
     </section>
 
     <section id="showCase">
+        <div id="popup">
+            <div class="wrap">
+                <div class="container">
+                    <button onclick="hideClosestId(this)">
+                    </button>
+                </div>
+            </div>
+        </div>
         <div class="wrap">
             <h2>Showcase your work like a pro.</h2>
             <p> Contact me if you like my work</p>
             <div class="flex">
-                <div><img src="img/img1.png" alt="img1"></div>
-                <div><img src="img/img2.png" alt="img2"></div>
-                <div><img src="img/img3.png" alt="img3"></div>
-                <div><img src="img/img4.png" alt="img4"></div>
-                <div><img src="img/img5.png" alt="img5"></div>
-                <div><img src="img/img6.png" alt="img6"></div>
+                <div>
+                    <div>
+                        <button class="prevZoom" onclick="popUp(this)"></button>
+                        <a href="#showCase" class="prevLink"></a>
+                    </div>
+                    <img src="img/img1.png" alt="img1">
+                </div>
+                <div>
+                    <div>
+                        <button class="prevZoom" onclick="popUp(this)"></button>
+                        <a href="#showCase" class="prevLink"></a>
+                    </div>
+                    <img src="img/img2.png" alt="img2">
+                </div>
+                <div>
+                    <div>
+                        <button class="prevZoom" onclick="popUp(this)"></button>
+                        <a href="#showCase" class="prevLink"></a>
+                    </div>
+                    <img src="img/img3.png" alt="img3">
+                </div>
+                <div>
+                    <div>
+                        <button class="prevZoom" onclick="popUp(this)"></button>
+                        <a href="#showCase" class="prevLink"></a>
+                    </div>
+                    <img src="img/img4.png" alt="img4">
+                </div>
+                <div>
+                    <div>
+                        <button class="prevZoom" onclick="popUp(this)"></button>
+                        <a href="#showCase" class="prevLink"></a>
+                    </div>
+                    <img src="img/img5.png" alt="img5">
+                </div>
+                <div>
+                    <div>
+                        <button class="prevZoom" onclick="popUp(this)"></button>
+                        <a href="#showCase" class="prevLink"></a>
+                    </div>
+                    <img src="img/img6.png" alt="img6">
+                </div>
             </div>
         </div>
     </section>

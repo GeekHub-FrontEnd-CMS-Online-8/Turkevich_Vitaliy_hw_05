@@ -96,7 +96,9 @@ header {
     width: 30%; }
 
 #showCase {
-  background: #f6f9f9; }
+  background: #f6f9f9;
+  display: block;
+  position: relative; }
   #showCase .wrap {
     padding: 40px 15px 70px; }
   #showCase .flex {
@@ -104,10 +106,66 @@ header {
     flex-wrap: wrap;
     justify-content: space-between;
     margin: 0 auto; }
-    #showCase .flex div {
+    #showCase .flex > div {
+      position: relative;
       margin: 10px;
-      width: 360px;
-      cursor: pointer; }
+      width: 360px; }
+      #showCase .flex > div > div {
+        position: absolute;
+        margin: 0 auto;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        opacity: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: rgba(43, 172, 250, 0.9);
+        transition: opacity .5s; }
+        #showCase .flex > div > div:hover {
+          opacity: .8; }
+        #showCase .flex > div > div .prevZoom, #showCase .flex > div > div .prevLink {
+          border: none;
+          margin: 5px;
+          height: 42px;
+          width: 42px;
+          opacity: 1;
+          cursor: pointer; }
+        #showCase .flex > div > div .prevZoom {
+          background: #15a4fa url("../img/zoom.png") no-repeat; }
+        #showCase .flex > div > div .prevLink {
+          background: #15a4fa url("../img/link.png") no-repeat; }
+
+#popup {
+  background: rgba(255, 255, 255, 0.9);
+  display: none;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1; }
+  #popup .wrap {
+    padding: 190px 15px 110px; }
+    #popup .wrap .container {
+      position: relative;
+      border: 3px solid #999999;
+      border-radius: 2px;
+      height: 550px;
+      background: url("../img/img1.png") no-repeat center;
+      background-size: 100% auto; }
+      #popup .wrap .container button {
+        position: absolute;
+        top: -21px;
+        right: 20px;
+        height: 40px;
+        width: 40px;
+        background: url("../img/cross.png");
+        border: none;
+        cursor: pointer; }
+        #popup .wrap .container button:hover {
+          background: url("../img/crossh.png"); }
 
 #stayWithUs {
   color: white;
