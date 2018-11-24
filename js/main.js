@@ -1,4 +1,3 @@
-var elem = "sadklfjasfk";
 function hideClosestId($pos) {
     $pos.closest("[id]").style.display="none";
 }
